@@ -3,6 +3,8 @@
 Backend demo di un ristorante, usato per mostrare la **Continuous Integration** su GitHub:
 ogni push su `main` esegue i test e, **solo se passano**, la build.
 
+📊 **Slide del corso:** [CI con GitHub Actions — Google Slides](https://docs.google.com/presentation/d/15Dye4rwOVbexBtcQD-hd1W7KDG7Z-Pn6qa6EXBRs91U/edit?usp=sharing)
+
 ## Le API
 
 | Metodo | Endpoint  | Descrizione |
