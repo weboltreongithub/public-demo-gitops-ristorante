@@ -49,11 +49,11 @@ push su main ──► job "test" ──► job "build" (needs: test) ──► 
                      └── se un test fallisce, la build NON parte
 ```
 
-- **test** — checkout, setup Node 20, `npm ci`, `npm test`
+- **test** — checkout, setup Node 24, `npm ci`, `npm test`
 - **build** — parte solo se `test` è verde (`needs: test`), produce l'artefatto `ristorante-backend`
 
 ## Stack
 
-- **Node.js 20** + **Express** come webserver
+- **Node.js 24** + **Express** come webserver
 - **node:test** (test runner nativo di Node, nessuna dipendenza di test)
 - **GitHub Actions** per la CI
