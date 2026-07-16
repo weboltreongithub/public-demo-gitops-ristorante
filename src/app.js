@@ -56,10 +56,7 @@ app.post('/cassa', (req, res) => {
   }
 
   ordine.pagato = true;
-  // BUG (fase 1 della demo): il resto è calcolato al contrario!
-  // Fix: importo - ordine.conto
-  // BUG (demo): il resto è calcolato al contrario! Fix: importo - ordine.conto
-  const resto = ordine.conto - importo;
+  const resto = importo - ordine.conto;
 
   res.json({ numeroOrdine, resto });
 });
