@@ -1,0 +1,14 @@
+{
+  "name": "ristorante-demo",
+  "version": "1.0.0",
+  "description": "Backend demo di un ristorante per la demo CI su GitHub Actions",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "build": "echo 'Build OK: pacchetto pronto per il deploy'"
+  },
+  "dependencies": {
+    "express": "^4.19.0"
+  }
+}
